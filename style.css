@@ -140,9 +140,12 @@ footer {
     width: 100%;
   }
 
-  .img,
-  .imgwin {
+  .img {
     width: 60%;
+  }
+
+  .imgwin {
+    width: 70%;
   }
 
   .player-win {
