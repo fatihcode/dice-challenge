@@ -61,32 +61,36 @@ function result() {
     }
 }
 
+
+//Resim önyükleme fonksiyonu
 function preloader() {
     if (document.images) {
-      var img1 = new Image();
-      var img2 = new Image();
-      var img3 = new Image();
-      var img4 = new Image();
-      var img5 = new Image();
-  
-      img1.src = "images/dice1.png";
-      img2.src = "images/dice2.png";
-      img3.src = "images/dice3.png";
-      img4.src = "images/dice4.png";
-      img5.src = "images/dice5.png";
+        var img1 = new Image();
+        var img2 = new Image();
+        var img3 = new Image();
+        var img4 = new Image();
+        var img5 = new Image();
+
+        img1.src = "images/dice1.png";
+        img2.src = "images/dice2.png";
+        img3.src = "images/dice3.png";
+        img4.src = "images/dice4.png";
+        img5.src = "images/dice5.png";
     }
-  }
-  function addLoadEvent(func) {
+}
+
+
+function addLoadEvent(func) {
     var oldonload = window.onload;
     if (typeof window.onload != 'function') {
-      window.onload = func;
+        window.onload = func;
     } else {
-      window.onload = function() {
-      if (oldonload) {
-        oldonload();
-      }
-      func();
-      }
+        window.onload = function () {
+            if (oldonload) {
+                oldonload();
+            }
+            func();
+        }
     }
-  }
-  addLoadEvent(preloader);
+}
+addLoadEvent(preloader);
