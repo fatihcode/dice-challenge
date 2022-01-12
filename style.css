@@ -60,11 +60,13 @@ p {
   color: #4ECCA3;
   font-family: 'Indie Flower', cursive;
   margin: 20px;
+  transition: all 0.3s ease;
 }
 
 .player-win {
   font-size: 2.5rem;
   color: red;
+  transition: all 0.3s ease;
 }
 
 .img {
