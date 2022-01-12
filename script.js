@@ -13,7 +13,7 @@ function random() {
 startButton.onclick = function run() {
 
     // Her 50ms 1 kere dice() fonksiyonunu çağıran methot
-    let loop = setInterval(() => dice(), 50);
+    let loop = setInterval(() => dice(), 100);
 
     //2 Saniye sonra setInterval durdurarak result() fonksiyonunu çalıştıran methot
     setTimeout(() => {
