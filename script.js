@@ -10,7 +10,7 @@ let random1, random2
 
 startButton.onclick = function run() {
 
-    let loop = setInterval(() => dice(), 30);
+    let loop = setInterval(() => dice(), 50);
 
     setTimeout(() => {
         clearInterval(loop);
