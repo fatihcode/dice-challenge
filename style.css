@@ -8,7 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 960px;
-  min-width: 360px;
+  min-width: 280px;
   margin: 0px auto;
   padding: 20px 0px;
 }
@@ -33,7 +33,6 @@ h1 {
   text-align: center;
   justify-content: center;
   align-items: center;
-  /* min-height: 350px; */
   margin: 0px auto;
 }
 
@@ -99,23 +98,22 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
-
 }
 
 
 @media only screen and (max-width: 600px) {
   h1 {
-    font-size: 2.8em;
+    font-size: 2.5em;
     margin: 10px auto;
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     margin: 10px;
   }
 
   .player-win {
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
 
   .vs {
@@ -125,16 +123,39 @@ footer {
 
   .dicecontainer {
     flex-direction: column;
-    padding: 20px;
+    padding: 20px 0px;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .dice {
+    max-width: 70%;
   }
 
   .main {
     padding: 0;
+    width: 100%;
   }
 
   .img,
   .imgwin {
-    width: 50%;
+    width: 60%;
   }
 
+  .player-win {
+    font-weight: bold;
+  }
+
+  footer {
+    margin-top: 10px;
+  }
+
+  @media only screen and (max-height: 750px) {
+    footer {
+      display: none;
+    }
+  }
 }
