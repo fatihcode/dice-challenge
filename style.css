@@ -94,6 +94,10 @@ p {
   transition: all 0.3s ease;
 }
 
+.btnImg{
+  width: 60px;
+}
+
 footer {
   margin-top: 50px;
   color: #EEEEEE;
@@ -147,11 +151,19 @@ footer {
   }
 
   .imgwin {
-    width: 70%;
+    width: 60%;
   }
 
   .player-win {
     font-weight: bold;
+  }
+
+  .btn{
+    padding: 10px;
+  }
+  
+  .btnImg{
+    width: 40px;
   }
 
   footer {
