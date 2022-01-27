@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
+
 body {
   background-image: url(images/background.jpg);
   background-repeat: repeat-y;
@@ -94,15 +96,8 @@ p {
   transition: all 0.3s ease;
 }
 
-.btnImg{
+.btnImg {
   width: 60px;
-}
-
-footer {
-  margin-top: 50px;
-  color: #EEEEEE;
-  text-align: center;
-  font-family: 'Indie Flower', cursive;
 }
 
 
@@ -158,21 +153,11 @@ footer {
     font-weight: bold;
   }
 
-  .btn{
+  .btn {
     padding: 10px;
   }
-  
-  .btnImg{
+
+  .btnImg {
     width: 40px;
-  }
-
-  footer {
-    margin-top: 10px;
-  }
-
-  @media only screen and (max-height: 800px) {
-    footer {
-      display: none;
-    }
   }
 }

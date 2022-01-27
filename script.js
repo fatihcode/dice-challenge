@@ -1,7 +1,7 @@
-const startButton = document.getElementById("start")
-const dice1 = document.getElementById("dice_A")
-const dice2 = document.getElementById("dice_B")
-let random1, random2
+const startButton = document.getElementById("start");
+const dice1 = document.getElementById("dice_A");
+const dice2 = document.getElementById("dice_B");
+let random1, random2;
 
 
 //1-6 arası random sayı üreten fonksiyon
