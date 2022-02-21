@@ -2,35 +2,37 @@ const startButton = document.getElementById("start");
 const dice1 = document.getElementById("dice_A");
 const dice2 = document.getElementById("dice_B");
 let random1, random2;
+let button = true
 
-
-//1-6 arası random sayı üreten fonksiyon
 function random() {
     return Math.ceil(Math.random() * 6)
 }
 
-//Basıldığında random sayı alıp resim değiştiren fonksiyon
+
 startButton.onclick = function run() {
 
-    // Her 50ms 1 kere dice() fonksiyonunu çağıran methot
-    let loop = setInterval(() => dice(), 100);
+    if (button) {
+        button = false
 
-    //2 Saniye sonra setInterval durdurarak result() fonksiyonunu çalıştıran methot
-    setTimeout(() => {
-        clearInterval(loop);
-        result();
-    }, 2000);
+        let loop = setInterval(() => dice(), 100);
 
-    //Random sayıya göre resim atayan fonksiyon
-    function dice() {
-        random1 = random()
-        random2 = random()
-        dice1.setAttribute("src", `images/dice${random1}.png`)
-        dice2.setAttribute("src", `images/dice${random2}.png`)
+        setTimeout(() => {
+            clearInterval(loop);
+            result();
+            button = true
+        }, 2000);
+
+
+        function dice() {
+            random1 = random()
+            random2 = random()
+            dice1.setAttribute("src", `images/dice${random1}.png`)
+            dice2.setAttribute("src", `images/dice${random2}.png`)
+        }
     }
 }
 
-//Çıkan sonucu karşılaştırıp yazı ve stil değiştiren fonksiyon
+
 function result() {
 
     const sonuc = document.querySelector("h1")
@@ -62,7 +64,7 @@ function result() {
 }
 
 
-//Resim önyükleme fonksiyonu
+
 function preloader() {
     if (document.images) {
         var img1 = new Image();
